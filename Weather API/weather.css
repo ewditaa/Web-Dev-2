@@ -1,0 +1,116 @@
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* Body Styling */
+body{
+font-family: "Segoe UI", Arial, sans-serif;
+height:100vh;
+display:flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+background-attachment: fixed;
+background-image:url(wheather-image.jpeg);
+background-size: cover;
+}
+/* Main Card */
+.container{
+background: rgba(255,255,255,0.95);
+padding:30px;
+width:380px;
+border-radius:15px;
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+text-align:center;
+transition: transform 0.3s ease;
+}
+
+.container:hover{
+transform: translateY(-5px);
+}
+
+/* Title */
+h1{
+color:#000000;
+margin-bottom:30px;
+}
+
+/* Input Field */
+input{
+padding:10px;
+width:65%;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:14px;
+outline:none;
+transition:0.3s;
+}
+
+input:focus{
+border-color:#3e0811;
+box-shadow:0 0 5px rgba(55, 2, 48, 0.5);
+}
+
+/* Search Button */
+button{
+margin-top:10px;
+padding:10px 15px;
+margin-left:5px;
+background:#082150;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:600;
+transition:0.3s;
+}
+
+button:hover{
+background:#082150;
+transform:scale(1.05);
+}
+
+/* Weather Result */
+#weatherResult{
+margin-top:20px;
+font-size:18px;
+color:#333;
+background:#f5f7ff;
+padding:15px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Weather City */
+#weatherResult h2{
+color:#082150;
+margin-bottom:8px;
+}
+
+/* History List */
+ul{
+list-style:none;
+margin-top:20px;
+padding:0;
+}
+
+/* History Items */
+li{
+background:#f2f2f2;
+padding:8px;
+margin:6px 0;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+h3{
+    margin-top:10px;
+}
+
+li:hover{
+background:#132e3f;
+transform:scale(1.03);
+}
